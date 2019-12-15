@@ -38,7 +38,7 @@
     border: 5px solid #463C2E;
 }
 .fa-pizza-slice{
-    font-size: 70px;
+    font-size: 150px;
     color: white;
 }
 
@@ -49,8 +49,9 @@
     flex-wrap: wrap;
     background-color: #463C2E;
     background-size: cover;
-    padding: 3%;
+    padding: 2%;
     border-radius: 30px;
+    width: 97%;
 }
 .menu-head{
     background: #463C2E;
