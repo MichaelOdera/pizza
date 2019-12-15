@@ -5,7 +5,7 @@
     padding: 5%;
     color: white;
     font-family: 'Kaushan Script', cursive;
-    font-size: 100px;
+    font-size: 120px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -80,3 +80,5 @@ select option{
 select option:hover{
     background-color: #BC5E30;
 }
+
+/*Styling the outlook of the cart*/
