@@ -15,6 +15,7 @@ function ready(){
         /*Listen for click then remove*/
         button.addEventListener('click', deleteCartItem)
     }
+
     var quantitySelections = document.getElementsByClassName('quantity');
     for(var k = 0; k < quantitySelections.length; k++){
         var quantitySelection = quantitySelections[k];
@@ -33,8 +34,29 @@ function addToShop(event){
     var addButton = event.target;
     var cartItem = addButton.parentElement;
     var pizzaName = cartItem.getElementsByClassName('card-title')[0].innerText;
-    console.log(pizzaName);
+    var pizzaItemPrice = cartItem.getElementsByClassName('price')[0].innerText;
+    /*Test the accessibility of the pizza name*/
+    console.log(pizzaName, pizzaItemPrice);
+    addPizzaToCart(pizzaName, pizzaItemPrice);
 
+}
+
+function addPizzaToCart(pizzaName, pizzaItemPrice){
+    var newCartItem = document.createElement('div');
+    newCartItem.innerText = pizzaName;
+    var cartItems = document.getElementsByClassName('cart-item')[0];
+    var cartItemContents = `
+            <div>
+                <h4 class="card-title text-center">Pizza de Buratta</h4>&nbsp;
+                <h4>Quantity:</h4>&nbsp;
+                <input type="number" class="quantity" value="2">
+                <p class="price">Kshs 1500</p>
+            </div>
+            <button class="btn-danger">DELETE</button>&nbsp;<button class="back-to-shop btn-success">Continue
+            Shopping</button>
+            <hr class="item-hr">`
+    newCartItem.innerHTML = cartItemContents;
+    cartItems.append(newCartItem)
 }
 
 
