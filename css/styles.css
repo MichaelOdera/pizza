@@ -21,8 +21,22 @@
     right: 0;
     bottom: 0;
     border-radius: 20px;
+    border: 3px dashed #931F0D;
+}
+.overlay h1{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    padding: 3%;
 }
 
+.overlay h1:not(:first-of-type){
+    margin-left: 25%;
+    width: 55%;
+}
+
+.overlay hr{
+    border: 5px solid #463C2E;
+}
 .fa-pizza-slice{
     font-size: 70px;
     color: white;
