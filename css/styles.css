@@ -97,3 +97,12 @@ select option:hover{
 }
 
 /*Styling the outlook of the cart*/
+.cart-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container hr{
+    border: 2px solid #EC7C2D;
+}
