@@ -14,12 +14,13 @@
 
 .overlay{
     background-size: cover;
-    background: rgba(0, 0, 0, 0.6);
+    background-color: #EC7C2D;
     padding: 5%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 20px;
 }
 
 .fa-pizza-slice{
