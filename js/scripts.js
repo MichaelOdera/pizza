@@ -20,6 +20,21 @@ function ready(){
         var quantitySelection = quantitySelections[k];
         quantitySelection.addEventListener('change', quantityChanged);
     }
+
+    /*Add to cart buttons*/
+    var addToShopListButtons = document.getElementsByClassName('add-to-cart');
+    for(var l = 0; l < addToShopListButtons.length; l++){
+        var addToShopListButton = addToShopListButtons[l];
+        addToShopListButton.addEventListener('click', addToShop);
+    }
+}
+/*function to add an item to the cart shopping list*/
+function addToShop(event){
+    var addButton = event.target;
+    var cartItem = addButton.parentElement;
+    var pizzaName = cartItem.getElementsByClassName('card-title')[0].innerText;
+    console.log(pizzaName);
+
 }
 
 
