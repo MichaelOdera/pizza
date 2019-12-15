@@ -19,13 +19,15 @@
         crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js/scripts.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <!--Adding Card Image-->
-    <header class="jumbotron text-center">
-        <h3 class="text-right"><i class="fas fa-shopping-cart"></i></h3>
+    <header class="jumbotron container-fluid text-center">
+        <h3 class="text-center"><i class="fas fa-shopping-cart"></i></h3>
         <div class="overlay">
             <i class='fas fa-pizza-slice'></i>
             <h1>Welcome </h1>
@@ -38,7 +40,7 @@
     </header>
     <h1 class="text-center"><i class='fas fa-arrow-down' style='font-size:48px;'></i></h1>
     <div class="container-fluid shop">
-        <!--The shopping cards-->
+
         <div class="card">
             <img class="card-img-top" src="https://i.pinimg.com/236x/79/17/9f/79179fc9280f7e347801237726eca187.jpg"
                 alt="Card image">
@@ -202,9 +204,9 @@
     </div>
 
 
-    <!--This contains the cart items-->
-    <div class="container">
-        <h2>SHOPPING CART</h2>
+    <!-- This contains the cart items-->
+    <div class="container cart">
+        <h2>SHOPPING CART ITEMS</h2>
         <hr>
         <div class="card-body">
             <div class="cart-item">
@@ -219,20 +221,12 @@
             <hr class="item-hr">
         </div>
 
-        div class="card-body">
-        <div class="cart-item">
-            <h4 class="card-title text-center">Pizza de Buratta</h4>&nbsp;
-            <h4>Quantity:</h4>&nbsp;
-            <input type="number" class="quantity">
-            <p class="card-text">Price: <span class="price">1500</span></p>
-        </div>
 
-        <button class="btn-danger">DELETE</button>&nbsp;<button class="back-to-shop btn-success">Continue
-            Shopping</button>
-        <hr class="item-hr">
+
+        <h3 class="text-center">Total: <span id="total-price"></span></h3>
+        <button class="checkout  text-center btn-warning">CHECKOUT</button>
     </div>
-    <h3>Total: <span id="total-price"></span></h3>
-    <button class="checkout btn-warning">CHECKOUT</button>
+
 
 
     </div>
