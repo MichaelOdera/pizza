@@ -2,37 +2,34 @@
 .jumbotron{
     background-image: url('https://i.pinimg.com/236x/aa/50/9d/aa509df6dde078ece1745e875092fe67.jpg');
     background-size: cover;
-    padding: 5%;
     color: white;
     font-family: 'Kaushan Script', cursive;
-    font-size: 120px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 5%;
 }
 
 .overlay{
     background-size: cover;
     background-color: #EC7C2D;
-    padding: 5%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     border-radius: 20px;
     border: 3px dashed #931F0D;
+    padding: 3%;
 }
 .overlay h1{
     background-color: rgba(0, 0, 0, 0.4);
     width: 50%;
     padding: 3%;
+    margin-top: 2%;
 }
 
-.overlay h1:not(:first-of-type){
-    margin-left: 25%;
-    width: 55%;
-}
+
 
 .overlay hr{
     border: 5px solid #463C2E;
@@ -57,7 +54,6 @@
     background: #463C2E;
     width: 60%;
     border-radius: 30px;
-    margin-left: 20%;
 }
 
 .card{
@@ -103,7 +99,7 @@ select option:hover{
     justify-content: space-between;
 }
 
-.container hr:first-of-type{
+.cart hr:first-of-type{
     border: 2px solid #EC7C2D;
 }
 
