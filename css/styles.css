@@ -94,15 +94,17 @@ select option:hover{
 
 /*Styling the outlook of the cart*/
 .cart-item{
+    border-bottom: 2px solid #931F0D;
+}
+.cart-item div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    padding-bottom: 2%;
 }
 
 .cart hr:first-of-type{
     border: 2px solid #EC7C2D;
 }
 
-.item-hr{
-    border: 1px solid #931F0D;
-}

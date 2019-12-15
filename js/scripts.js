@@ -13,12 +13,17 @@ for(var i = 0; i < deleteCartItemButtons.length; i++){
     })
 }
 
+/*The section that deals with the updating of the sum after the deletion of an item*/
 function updateFinalSum(){
     var cartList = document.getElementsByClassName('cart')[0];
-    var shopItemsBody = cartList.getElementsByClassName('card-body')[0];
-    var shopItems = shopItemsBody.getElementsByClassName('cart-item');
-    for(var j=0; j < shopItems.length; j++){
-        var shopItem = shopItems[i];
+    var cartItems = cartList.getElementsByClassName('cart-item');
+    for(var j=0; j <cartItems.length; j++){
+        var cartItem = cartItems[j];
+        var pizzaPrice = cartItem.getElementsByClassName('price')[0];
+        var pizzaQuantity = cartItem.getElementsByClassName('quantity')[0];
+        console.log(pizzaPrice, pizzaQuantity);
+        /*The replacement of the kshs with empty space*/
+        var price = parseFloat(pizzaPrice.innerText.replace('Kshs', ''));
+        console.log(price);
     }
-
 }
