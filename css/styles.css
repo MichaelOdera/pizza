@@ -103,6 +103,10 @@ select option:hover{
     justify-content: space-between;
 }
 
-.container hr{
+.container hr:first-of-type{
     border: 2px solid #EC7C2D;
+}
+
+.item-hr{
+    border: 1px solid #931F0D;
 }
