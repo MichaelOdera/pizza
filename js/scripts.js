@@ -9,5 +9,16 @@ for(var i = 0; i < deleteCartItemButtons.length; i++){
         console.log("clicked");
         var buttonClicked = event.target;
         buttonClicked.parentElement.remove();
+        updateFinalSum();
     })
+}
+
+function updateFinalSum(){
+    var cartList = document.getElementsByClassName('cart')[0];
+    var shopItemsBody = cartList.getElementsByClassName('card-body')[0];
+    var shopItems = shopItemsBody.getElementsByClassName('cart-item');
+    for(var j=0; j < shopItems.length; j++){
+        var shopItem = shopItems[i];
+    }
+
 }
