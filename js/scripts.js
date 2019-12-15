@@ -43,14 +43,22 @@ function addToShop(event){
 
 function addPizzaToCart(pizzaName, pizzaItemPrice){
     var newCartItem = document.createElement('div');
-    newCartItem.innerText = pizzaName;
-    var cartItems = document.getElementsByClassName('cart-item')[0];
+    newCartItem.classList.add('cart-item');
+    var cartItems = document.getElementsByClassName('cart-list')[0];
+    // /*Checking if the user has added the same item twice*/
+    // var cartItemsNames = document.getElementsByClassName('card-title');
+    // for(var m = 0; m < cartItemsNames.length; m ++){
+    //     if(cartItemsNames[m].innerText = pizzaName){
+    //         alert("You have already entered that order");
+    //         return
+    //     }
+    // }
     var cartItemContents = `
             <div>
-                <h4 class="card-title text-center">Pizza de Buratta</h4>&nbsp;
+                <h4 class="card-title text-center">${pizzaName}</h4>&nbsp;
                 <h4>Quantity:</h4>&nbsp;
                 <input type="number" class="quantity" value="2">
-                <p class="price">Kshs 1500</p>
+                <p class="price">${pizzaItemPrice}</p>
             </div>
             <button class="btn-danger">DELETE</button>&nbsp;<button class="back-to-shop btn-success">Continue
             Shopping</button>
