@@ -38,6 +38,7 @@ function addToShop(event){
     /*Test the accessibility of the pizza name*/
     console.log(pizzaName, pizzaItemPrice);
     addPizzaToCart(pizzaName, pizzaItemPrice);
+    updateFinalSum();
 
 }
 
@@ -64,7 +65,12 @@ function addPizzaToCart(pizzaName, pizzaItemPrice){
             Shopping</button>
             <hr class="item-hr">`
     newCartItem.innerHTML = cartItemContents;
-    cartItems.append(newCartItem)
+    cartItems.append(newCartItem);
+    /*Adding event listeners to the newly added items to the cart*/
+    /*Listening for the click of button delete*/
+    newCartItem.getElementsByClassName('btn-danger')[0].addEventListener('click', deleteCartItem);
+    /*Listening for the change of the input number*/
+    newCartItem.getElementsByClassName('quantity')[0].addEventListener('change', quantityChanged);
 }
 
 
