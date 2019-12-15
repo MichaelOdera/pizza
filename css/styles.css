@@ -29,6 +29,10 @@
     margin-top: 2%;
 }
 
+.overlay h1:not(:first-of-type){
+    width: 55%;
+}
+
 
 
 .overlay hr{
