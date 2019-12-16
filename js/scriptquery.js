@@ -19,4 +19,9 @@ $(document).ready(function(){
         $(".container-fluid").show();
         $(".cart").toggle();
     });
+
+    /*display checkout div*/
+    $('.checkout').one('click', function(){
+        $('#checkout').show();
+    });
 });

@@ -90,6 +90,7 @@ select{
     background-color: #EC7C2D;
     width: 30%;
     padding: 3%;
+    margin: 1%;
 }
 
 select option{
@@ -127,5 +128,14 @@ select option:hover{
 
 #checkout{
     display: none;
+}
+
+button{
+    margin: 1%;
+    border-radius: 5px;
+}
+
+.btn-success{
+    margin-top: 1%;
 }
 
