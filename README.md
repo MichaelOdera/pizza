@@ -22,7 +22,7 @@ The were no main problems encountered in terms of running the Jquery and Javascr
 ## Configuration
 To configure this project to your system, you will need a knowledge of git, Github, jQuery, JavaScript, and CSS. You may also need a good code editor if you are to edit any lines of code submitted.
 ## Operating
-After cloning the directory to your local machine in a particular directory, it is important that you load the system when the internet is accessible to you since the subscription form uses the third party data storage system which is MailChimp. The fonts used are partly google fonts and they may not load up well if the internet is slow, and you will not experience any if you do not have an internet connection.
+After cloning the directory to your local machine in a particular directory, it is important that you load the system when the internet is accessible to you since the subscription form uses jQuery and may take time to load. The fonts used are partly google fonts and they may not load up well if the internet is slow, and you will not experience any if you do not have an internet connection.
 ## Troubleshooting
 Browse issues: https://github.com/MichaelOdera/pizza/issues
 

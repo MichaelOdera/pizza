@@ -130,6 +130,10 @@ select option:hover{
     display: none;
 }
 
+#new-contact{
+    display: none;
+}
+
 button{
     margin: 1%;
     border-radius: 5px;
@@ -142,3 +146,4 @@ button{
 #no-delivery-price{
     display: none;
 }
+
