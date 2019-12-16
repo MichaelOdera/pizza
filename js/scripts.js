@@ -28,8 +28,8 @@ function ready(){
         var addToShopListButton = addToShopListButtons[l];
         addToShopListButton.addEventListener('click', addToShop);
     }
-
-    document.getElementsByClassName('purchase')[0].addEventListener('click', purchaseButtonClicked)
+    /*Adding the purchae click function*/
+    document.getElementsByClassName('purchase')[0].addEventListener('click', purchaseButtonClicked);
 }
 
 /*On purchase licked after events*/
