@@ -28,6 +28,17 @@ function ready(){
         var addToShopListButton = addToShopListButtons[l];
         addToShopListButton.addEventListener('click', addToShop);
     }
+
+    document.getElementsByClassName('purchase')[0].addEventListener('click', purchaseButtonClicked)
+}
+
+/*On purchase licked after events*/
+function purchaseButtonClicked(event){
+    var purchaseClicked = event.target;
+    var cartListItems = document.getElementsByClassName('cart-list')[0];
+    while(cartListItems.hasChildNodes()){
+        cartListItems.removeChild(cartListItems.firstChild);
+    }
 }
 /*function to add an item to the cart shopping list*/
 function addToShop(event){
