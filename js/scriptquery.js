@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    /*Alert on successful addition*/
+    $(".add-to-cart").one('click', function(){
+        alert("Successfully added to cart");
+    });
+
     $("#fa-shopping").one('click', function(){
         $(".shop").toggle();
         $(".cart").show();
