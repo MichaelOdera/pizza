@@ -19,4 +19,23 @@ $(document).ready(function(){
         $(".container-fluid").show();
         $(".cart").toggle();
     });
+
+    $("form#new-contact").submit(function (event) {
+        event.preventDefault();
+        var inputtedName = $("input#name").val();
+        var inputtedDestination = $("input#destination").val();
+        if(inputtedDestination != "" && inputtedName != ""){
+            $("#name").text(inputtedName);
+            $("#destination").text(inputtedDestination);
+            var total = parseFloat($('.total-price').text());
+            var finalPrice = total + 200;
+            alert(finalPrice);
+            $("#price").text(finalPrice);
+        }
+        else{
+            $("Thank you for your purchase");
+        }
+        
+
+    });
 });
