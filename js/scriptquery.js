@@ -25,6 +25,18 @@ $(document).ready(function(){
         $('#checkout').show();
     });
 
+    $(".yes").one('click', function(){
+        $('#new-contact').show();
+    });
+
+    $(".no").one('click', function(){
+        var totalShow = parseFloat($('.total-price').text());
+        alert(totalShow);
+        $("#no-delivery-price").show();
+        $("#no-delivery-price").text(totalShow)
+    });
+
+
     $("form#new-contact").submit(function (event) {
         event.preventDefault();
         var inputtedName = $("input#name").val();
