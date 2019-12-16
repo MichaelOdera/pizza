@@ -125,3 +125,7 @@ select option:hover{
     cursor: pointer;
 }
 
+#checkout{
+    display: none;
+}
+
