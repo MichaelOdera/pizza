@@ -302,9 +302,29 @@
         <button class="checkout  text-center btn-warning">CHECKOUT</button>
         <button class="back-to-shop btn-success">Continue Shopping</button>
         <div id="checkout">
-            <p>Name<span id="name"></span></p>
-            <p>Destination<span id="destination"></span></p>
-            <p>Total Price<span id="price"></span>span></p>
+            <!--Pick up point form-->
+            <div class="col-md-6">
+                <h2>Add a contact if you want Delivery: Extra charges Kshs 200</h2>
+                <form id="new-contact">
+                    <div class="form-group">
+                        <label for="name">First name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Pick-up point</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                    <button type="submit" class="btn btn-info">Book delivery</button>
+                </form>
+
+                <p>Name<span id="name"></span></p>
+                <p>Destination<span id="destination"></span></p>
+                <p>Total Price Kshs: <span id="price"></span></p>
+            </div>
+
+
+
+
 
         </div>
     </div>
