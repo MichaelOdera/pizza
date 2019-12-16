@@ -101,6 +101,10 @@ select option:hover{
 }
 
 /*Styling the outlook of the cart*/
+
+.cart{
+    display: none;
+}
 .cart-item{
     border-bottom: 2px solid #931F0D;
 }
