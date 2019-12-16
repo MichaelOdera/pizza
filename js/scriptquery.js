@@ -33,7 +33,6 @@ $(document).ready(function(){
             alert("Thank you "+inputtedName+" for shopping with us your item will be delivered at "+inputtedDestination)
             var total = parseFloat($('.total-price').text());
             var finalPrice = total + 200;
-            alert(finalPrice);
             $("#price").text(finalPrice);
         }
         else{
