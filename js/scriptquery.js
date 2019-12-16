@@ -25,6 +25,15 @@ $(document).ready(function(){
         $('#checkout').show();
     });
 
+    $(".yes").one('click', function(){
+        $('#new-contact').show();
+    });
+
+    $(".no").one('click', function(){
+        var totalShow = parseFloat($('.total-price').text());
+        $("#price").text(totalShow)
+    });
+
     $("form#new-contact").submit(function (event) {
         event.preventDefault();
         var inputtedName = $("input#name").val();
@@ -38,8 +47,7 @@ $(document).ready(function(){
         }
         else{
             $("Thank you for your purchase");
-        }
-        
+        } 
 
     })
 });
