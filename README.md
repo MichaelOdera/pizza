@@ -30,7 +30,6 @@ Browse issues: https://github.com/MichaelOdera/pizza/issues
 You may contact me through michogelira@gmail.com or +254733258286 if you need to reach out to me
 
 ## Technologies used
-* MailChimp
 * HTML5
 * CSS3
 * JAVASCRIPT
