@@ -164,3 +164,14 @@ function showPrice10(){
     document.getElementById("ten").innerHTML = "Kshs "+ price10;
 }
 
+/*prices selection for toppings and crusts*/
+function showPrice11(){
+    var price11 = document.getElementById("selection11").value;
+    document.getElementById("elleven").innerHTML = "Kshs "+price11;
+}
+
+function showPrice12(){
+    var price12 = document.getElementById("selection12").value;
+    document.getElementById("twelve").innerHTML = "Kshs "+price12;
+}
+
