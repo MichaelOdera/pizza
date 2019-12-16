@@ -30,8 +30,7 @@ $(document).ready(function(){
         var inputtedName = $("input#name").val();
         var inputtedDestination = $("input#destination").val();
         if(inputtedDestination != "" && inputtedName != ""){
-            $("#name").text(inputtedName);
-            $("#destination").text(inputtedDestination);
+            alert("Thank you "+inputtedName+" for shopping with us your item will be delivered at "+inputtedDestination)
             var total = parseFloat($('.total-price').text());
             var finalPrice = total + 200;
             alert(finalPrice);
