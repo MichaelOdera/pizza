@@ -25,13 +25,17 @@ $(document).ready(function(){
         $('#checkout').show();
     });
 
+    /*Create a choice for accepting or rejecting delivery option*/
+
     $(".yes").one('click', function(){
         $('#new-contact').show();
     });
 
     $(".no").one('click', function(){
         var totalShow = parseFloat($('.total-price').text());
-        $("#price").text(totalShow)
+        alert(totalShow);
+        $("#no-delivery-price").show();
+        $("#no-delivery-price").text(totalShow)
     });
 
     $("form#new-contact").submit(function (event) {
