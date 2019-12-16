@@ -122,5 +122,6 @@ select option:hover{
 
 .fa-shopping-cart{
     color: #463C2E;
+    cursor: pointer;
 }
 
