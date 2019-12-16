@@ -35,6 +35,7 @@ function ready(){
 /*On purchase licked after events*/
 function purchaseButtonClicked(event){
     var purchaseClicked = event.target;
+    alert("Thank you for shopping with us");
     var cartListItems = document.getElementsByClassName('cart-list')[0];
     while(cartListItems.hasChildNodes()){
         cartListItems.removeChild(cartListItems.firstChild);
