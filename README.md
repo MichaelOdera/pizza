@@ -9,10 +9,10 @@ Here is a github pages live link of my website https://michaelodera.github.io/pi
 
 ## Installation
 ### Clone this repository
-```
+
 git clone https://github.com/MichaelOdera/pizza.git
 
-```
+
 ### Additional installation instructions
 Here are the instructions for cloning into my project. You may require git and a GitHub account if you have not subscribed yet.
 
