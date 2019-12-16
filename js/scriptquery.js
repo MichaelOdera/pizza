@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("#fa-shopping").one('click', function(){
         $(".shop").toggle();
+        $(".cart").show();
        
     });
     
