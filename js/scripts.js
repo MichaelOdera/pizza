@@ -111,3 +111,56 @@ function updateFinalSum(){
     }
     document.getElementsByClassName('total-price')[0].innerText = sumTotal;
 }
+
+
+/*Creating functions to show prices on change of pizza size selection*/
+function showPrice1(){
+    var price1 = document.getElementById("selection1").value;
+    document.getElementById("one").innerHTML = "Kshs "+ price1;
+}
+
+function showPrice2(){
+    var price2 = document.getElementById("selection2").value;
+    document.getElementById("two").innerHTML = "Kshs "+ price2;
+}
+
+function showPrice3(){
+    var price3 = document.getElementById("selection3").value;
+    document.getElementById("three").innerHTML = "Kshs "+ price3;
+}
+
+function showPrice4(){
+    var price4 = document.getElementById("selection4").value;
+    document.getElementById("four").innerHTML = "Kshs "+ price4;
+}
+
+function showPrice5(){
+    var price5 = document.getElementById("selection5").value;
+    document.getElementById("five").innerHTML = "Kshs "+ price5;
+}
+
+function showPrice6(){
+    var price6 = document.getElementById("selection6").value;
+    document.getElementById("six").innerHTML = "Kshs "+ price6;
+}
+
+function showPrice7(){
+    var price7 = document.getElementById("selection7").value;
+    document.getElementById("seven").innerHTML = "Kshs "+ price7;
+}
+
+function showPrice8(){
+    var price8 = document.getElementById("selection8").value;
+    document.getElementById("eight").innerHTML = "Kshs "+ price8;
+}
+
+function showPrice9(){
+    var price9 = document.getElementById("selection9").value;
+    document.getElementById("nine").innerHTML = "Kshs "+ price9;
+}
+
+function showPrice10(){
+    var price10 = document.getElementById("selection10").value;
+    document.getElementById("ten").innerHTML = "Kshs "+ price10;
+}
+

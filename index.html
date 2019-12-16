@@ -28,7 +28,8 @@
 <body>
     <!--Adding Card Image-->
     <header class="jumbotron container-fluid text-center">
-        <h3 class="text-center"><i class="fas fa-shopping-cart"></i></h3>
+        <h3 class="text-center" id="fa-shopping" type="text-decoration: underline; color: red;"><i
+                class="fas fa-shopping-cart"></i></h3>
         <div class="overlay">
             <i class='fas fa-pizza-slice'></i>
             <h1>Welcome</h1>
@@ -48,14 +49,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Pizza Casera </h4>
                 <hr>
-                <p class="card-text price">Kshs 1500 </p>
+                <p class="card-text price" id="one">Kshs 1000</p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection1" onchange="showPrice1()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -65,14 +67,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Pizza Waffle</h4>
                 <hr>
-                <p class="card-text price">Kshs 1200</p>
+                <p class="card-text price" id="two">Kshs 1200</p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection2" onchange="showPrice2()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -82,14 +85,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Pepperoni Pizza</h4>
                 <hr>
-                <p class="card-text price">Kshs 1250 </p>
+                <p class="card-text price" id="three">Kshs 1250 </p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection3" onchange="showPrice3()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -99,14 +103,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Pizza Kutchen</h4>
                 <hr>
-                <p class="card-text price">Kshs 1000 </p>
+                <p class="card-text price" id="four">Kshs 1000 </p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection4" onchange="showPrice4()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -116,14 +121,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Pizza tourbillion</h4>
                 <hr>
-                <p class="card-text price">Kshs 750</p>
+                <p class="card-text price" id="five">Kshs 750</p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection5" onchange="showPrice5()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -133,14 +139,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Smoked Salmon Pizza</h4>
                 <hr>
-                <p class="card-text price">Kshs 970</p>
+                <p class="card-text price" id="six">Kshs 970</p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection6" onchange="showPrice6()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -150,14 +157,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Pizza Zuchini</h4>
                 <hr>
-                <p class="card-text price">Kshs 860</p>
+                <p class="card-text price" id="seven">Kshs 860</p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection7" onchange="showPrice7()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -167,14 +175,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Bacon Ranch Pizza</h4>
                 <hr>
-                <p class="card-text price">Kshs 900</p>
+                <p class="card-text price" id="eight">Kshs 900</p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection8" onchange="showPrice8()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -184,14 +193,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Pizza Trenzada</h4>
                 <hr>
-                <p class="card-text price">Kshs 1100</p>
+                <p class="card-text price" id="nine">Kshs 1100</p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection9" onchange="showPrice9()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cart btn-success">Check Cart</button>
             </div>
         </div>
 
@@ -201,14 +211,15 @@
             <div class="card-body">
                 <h4 class="card-title text-center">Pizza de Buratta</h4>
                 <hr>
-                <p class="card-text price">Kshs 640</p>
+                <p class="card-text price" id="ten">Kshs 640</p>
                 <h4>Size</h4>
-                <select name="size">
+                <select id="selection10" onchange="showPrice10()" name="size">
                     <option value="1000">Large</option>
                     <option value="800">Medium</option>
                     <option value="650">Small</option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
+                <button class="go-to-cartbtn-success">Check Cart</button>
             </div>
         </div>
 
@@ -255,6 +266,7 @@
 
         <h3 class="text-center">Total Kshs: <span class="total-price"></span></h3>
         <button class="checkout  text-center btn-warning">CHECKOUT</button>
+        <button class="back-to-shop btn-success">Continue Shopping</button>
     </div>
 
 
