@@ -7,7 +7,8 @@
 ### live link to my website
 Here is a github pages live link of my website https://michaelodera.github.io/pizza/
 
-###Codebeat grading[![codebeat badge](https://codebeat.co/badges/a129a85f-6a51-4817-9661-2747b5e5d078)](https://codebeat.co/projects/github-com-michaelodera-pizza-master)
+### Codebeat grading
+[![codebeat badge](https://codebeat.co/badges/a129a85f-6a51-4817-9661-2747b5e5d078)](https://codebeat.co/projects/github-com-michaelodera-pizza-master)
 
 
 ## Installation

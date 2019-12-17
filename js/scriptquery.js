@@ -21,7 +21,7 @@ $(document).ready(function(){
     });
 
     /*display checkout div*/
-    $('.checkout').click(function(){
+    $('.checkout').bind('click',function(){
         $('#checkout').show();
     });
 
