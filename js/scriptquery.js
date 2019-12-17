@@ -52,4 +52,13 @@ $(document).ready(function(){
         } 
 
     })
+
+    /*using a constructor to display name of person*/
+    function Contact(name, destination){
+        this.name = name;
+        this.destination = destination;
+    }
+
+    var person = new Contact(inputtedName, inputtedDestination);
+    alert(person());
 });
