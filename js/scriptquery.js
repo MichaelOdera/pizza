@@ -1,6 +1,6 @@
 $(document).ready(function(){
     /*Alert on successful addition*/
-    $(".add-to-cart").one('click', function(){
+    $(".add-to-cart").click(function(){
         alert("Successfully added to cart");
     });
 
@@ -15,7 +15,7 @@ $(document).ready(function(){
         $(".cart").show();
     });
     
-    $(".back-to-shop").one('click', function(){
+    $(".back-to-shop").click(function(){
         $(".container-fluid").show();
         $(".cart").toggle();
     });
