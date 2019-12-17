@@ -10,7 +10,7 @@ $(document).ready(function(){
        
     });
     
-    $(".go-to-cart").one('click', function(){
+    $(".go-to-cart").click(function(){
         $(".container-fluid").hide();
         $(".cart").show();
     });
@@ -21,7 +21,7 @@ $(document).ready(function(){
     });
 
     /*display checkout div*/
-    $('.checkout').one('click', function(){
+    $('.checkout').click(function(){
         $('#checkout').show();
     });
 
