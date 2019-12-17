@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     /*display checkout div*/
     $('.checkout').click(function(){
-        $('#checkout').show();
+        $('#checkout').toggle();
     });
 
     /*Create a choice for accepting or rejecting delivery option*/
@@ -52,7 +52,7 @@ $(document).ready(function(){
         } 
 
     });
-    /*using a constructor*/
+    /*using a constructor to display name of person*/
     function Contact(name, destination){
         this.name = name;
         this.destination = destination;
