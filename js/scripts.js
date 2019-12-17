@@ -73,8 +73,7 @@ function addPizzaToCart(pizzaName, pizzaItemPrice){
                 <input type="number" class="quantity" value="2">
                 <p class="price">${pizzaItemPrice}</p>
             </div>
-            <button class="btn-danger">DELETE</button>&nbsp;<button class="back-to-shop btn-success">Continue
-            Shopping</button>
+            <button class="btn-danger">DELETE</button>
             <hr class="item-hr">`
     newCartItem.innerHTML = cartItemContents;
     cartItems.append(newCartItem);
