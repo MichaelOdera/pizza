@@ -70,7 +70,7 @@ function addPizzaToCart(pizzaName, pizzaItemPrice){
             <div>
                 <h4 class="card-title text-center">${pizzaName}</h4>&nbsp;
                 <h4>Quantity:</h4>&nbsp;
-                <input type="number" class="quantity" value="2">
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
                 <p class="price">${pizzaItemPrice}</p>
             </div>
             <button class="btn-danger">DELETE</button>

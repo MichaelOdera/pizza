@@ -41,8 +41,20 @@ $(document).ready(function(){
         event.preventDefault();
         var inputtedName = $("input#name").val();
         var inputtedDestination = $("input#destination").val();
+
+
+        /*I have implemented a constructor*/
+        function Visitor(name, destination){
+            this.name = name;
+            this.destination = destination;
+        }
         if(inputtedDestination != "" && inputtedName != ""){
-            alert("Thank you "+inputtedName+" for shopping with us your item will be delivered at "+inputtedDestination)
+            var user = new Visitor(inputtedName ,inputtedDestination);
+            /*Implemented a prototype*/
+            Visitor.prototype.nameShow = function(){
+                return "Thank you "+user.name+" for shopping with us your item will be delivered at "+user.destination
+            }
+            alert(user.nameShow());
             var total = parseFloat($('.total-price').text());
             var finalPrice = total + 200;
             $("#price").text(finalPrice);
@@ -51,14 +63,10 @@ $(document).ready(function(){
             $("Thank you for your purchase");
         } 
 
+        
+       
+
+
     })
 
-    /*using a constructor to display name of person*/
-    function Contact(name, destination){
-        this.name = name;
-        this.destination = destination;
-    }
-
-    var person = new Contact(inputtedName, inputtedDestination);
-    alert(person());
 });
