@@ -21,8 +21,8 @@ $(document).ready(function(){
     });
 
     /*display checkout div*/
-    $('.checkout').click(function(){
-        $('#checkout').toggle();
+    $('.checkout').bind('click',function(){
+        $('#checkout').show();
     });
 
     /*Create a choice for accepting or rejecting delivery option*/
@@ -38,12 +38,16 @@ $(document).ready(function(){
     });
 
     $("form#new-contact").submit(function (event) {
+        event.preventDefault();
+        var inputtedName = $("input#name").val();
+        var inputtedDestination = $("input#destination").val();
+
+
         /*I have implemented a constructor*/
         function Visitor(name, destination){
             this.name = name;
             this.destination = destination;
         }
-        
         if(inputtedDestination != "" && inputtedName != ""){
             var user = new Visitor(inputtedName ,inputtedDestination);
             /*Implemented a prototype*/
@@ -59,6 +63,6 @@ $(document).ready(function(){
             $("Thank you for your purchase");
         }  
 
-    });
-    
+    })
+
 });
