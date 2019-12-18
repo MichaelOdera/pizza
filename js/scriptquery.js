@@ -63,10 +63,6 @@ $(document).ready(function(){
             $("Thank you for your purchase");
         } 
 
-        
-       
-
-
     })
 
 });
